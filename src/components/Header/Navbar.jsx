@@ -1,4 +1,4 @@
-import Arrow from "../../assets/images/arw.png";
+import Arrow from "../../assets/images/sub_menu_arw.png";
 
 const navLinks = [
   {
@@ -54,8 +54,7 @@ const Navbar = () => {
               <img
                 src={Arrow}
                 alt="Arrow Indicator"
-                className="w-3 h-3 object-contain opacity-0 group-hover:opacity-100 transition-all duration-300"
-                loading="lazy"
+               
               />
             </li>
           ))}
