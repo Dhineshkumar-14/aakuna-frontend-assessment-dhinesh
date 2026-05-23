@@ -43,8 +43,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white relative z-50" aria-label="Main Navigation">
-      <div className="flex items-center justify-end px-4 py-3 md:hidden">
+    <nav className="w-full bg-white relative" aria-label="Main Navigation">
+      <div className="flex items-center justify-end px-4 py-3 lg:hidden">
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
@@ -63,7 +63,7 @@ const Navbar = () => {
         <ul
           className={`
     ${isOpen ? "flex" : "hidden"}
-    md:flex
+    lg:flex
     flex-col
     md:flex-row
     md:items-center
