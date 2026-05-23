@@ -19,7 +19,23 @@ const Home = () => {
       <CTASection />
       <ShowroomSection />
       <AboutSection />
-      <div className="flex justify-around">
+      <div
+        className="
+    w-[95%]
+    max-w-[1400px]
+    mx-auto
+
+    grid
+    grid-cols-1
+    lg:grid-cols-2
+
+    gap-10
+    lg:gap-14
+
+    py-10
+    md:py-14
+  "
+      >
         <NewsAndEvents />
         <PromotionalVideo />
       </div>
