@@ -1,56 +1,104 @@
 import React from "react";
+import { ChevronRight } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-600">
-      <div className="max-w-7xl mx-auto px-6 py-3 border-b border-gray-300">
-        <div className="flex flex-wrap items-center gap-2 text-sm">
-          <span className="font-semibold">Quick Links</span>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+
+      <div className="max-w-7xl mx-auto px-5 py-3 border-b border-gray-300">
+        <div
+          className="
+            flex
+            flex-wrap
+            items-center
+            gap-2
+
+            text-xs
+            
+          "
+        >
+          <span className="font-semibold text-gray-800">Quick Links</span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Home
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             New Vehicles
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Used Vehicles
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Service
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Parts
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Financial Services
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Contact Us
-          </a>
-          <span>&gt;</span>
-          <a href="/" className="hover:text-purple-700">
+          </span>
+
+          <ChevronRight size={14} />
+
+          <span className="hover:text-purple-700 cursor-pointer transition-all">
             Sitemap
-          </a>
+          </span>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm">
-        <p>© Copyright 2014 Markham Infiniti. All Rights Reserved.</p>
-        <div className="mt-2 md:mt-0">
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+
+          px-5
+          py-4
+
+          flex
+          flex-col
+          md:flex-row
+
+          items-center
+          justify-between
+
+          gap-2
+
+          text-xs
+          md:text-sm
+        "
+      >
+        <p className="text-center md:text-left">
+          © Copyright 2014 Markham Infiniti. All Rights Reserved.
+        </p>
+
+        <div className="text-center md:text-right">
           powered by{" "}
-          <a
-            href="#"
-            className="text-blue-600 font-semibold"
-          >
+          <span className="text-blue-600 font-semibold cursor-pointer">
             e-DEALER.CA
-          </a>
+          </span>
         </div>
       </div>
     </footer>
