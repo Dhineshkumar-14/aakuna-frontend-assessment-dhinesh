@@ -1,40 +1,39 @@
-import React from "react";
+import BgDottedLine from "../../assets/images/bg-dotted-line.png";
 
-import BgDottedLine from "../../assets/images/bg_dotted_Line.png";
-import CTA01 from "../../assets/images/cta_01.png";
-import CTA02 from "../../assets/images/cta_02.png";
-import CTA03 from "../../assets/images/CTA_03.png";
-import CTA04 from "../../assets/images/cta_04.png";
+import CTA01Icon from "../../assets/images/cta-01.png";
+import CTA02Icon from "../../assets/images/cta-02.png";
+import CTA03Icon from "../../assets/images/cta-03.png";
+import CTA04Icon from "../../assets/images/cta-04.png";
 
-import CTAArrow from "../../assets/images/cta_arw.png";
-import CTAArrowViolet from "../../assets/images/cta_violet.png";
-import Shadow from "../../assets/images/shadow.png";
+import CTAArrowIcon from "../../assets/images/cta-arrow.png";
+import CTAArrowVioletIcon from "../../assets/images/cta-violet-arrow.png";
 
+import ShadowImage from "../../assets/images/shadow.png";
 const ctaItems = [
   {
     id: 1,
-    icon: CTA01,
+    icon: CTA01Icon,
     title: "Shop New Vehicles",
-    arrow: CTAArrow,
+    arrow: CTAArrowIcon,
   },
   {
     id: 2,
-    icon: CTA02,
+    icon: CTA02Icon,
     title: "Shop Used Vehicles",
-    arrow: CTAArrow,
+    arrow: CTAArrowIcon,
   },
   {
     id: 3,
-    icon: CTA03,
+    icon: CTA03Icon,
     title: "Service & Parts",
-    arrow: CTAArrowViolet,
+    arrow: CTAArrowVioletIcon,
     active: true,
   },
   {
     id: 4,
-    icon: CTA04,
+    icon: CTA04Icon,
     title: "Specials",
-    arrow: CTAArrow,
+    arrow: CTAArrowIcon,
   },
 ];
 
@@ -70,7 +69,7 @@ const CTASection = () => {
           >
             <div className="h-8 flex items-end justify-center">
               <img
-                src={CTAArrowViolet}
+                src={CTAArrowVioletIcon}
                 alt="Top Arrow"
                 className={`
               w-10
@@ -103,11 +102,11 @@ const CTASection = () => {
             sm:w-36 sm:h-36
             md:w-40 md:h-40
 
-            ${
-              item.active
-                ? "bg-purple-900 border-purple-600 text-white"
-                : "bg-white border-gray-300 text-gray-800 hover:bg-purple-900 hover:border-purple-600 hover:text-white"
-            }
+             ${
+               item.active
+                 ? "bg-[#5B2D90] border-[#6E3FA3] text-white"
+                 : "bg-white border-gray-300 text-gray-800 hover:bg-[#5B2D90] hover:border-[#6E3FA3] hover:text-white"
+             }
           `}
             >
               <img
@@ -126,7 +125,7 @@ const CTASection = () => {
               </span>
 
               <img
-                src={CTAArrow}
+                src={CTAArrowIcon}
                 alt="Bottom Arrow"
                 className={`
               absolute
@@ -140,7 +139,7 @@ const CTASection = () => {
             </div>
 
             <div className="h-8 absolute -bottom-15 flex items-start justify-center">
-              <img src={Shadow} alt="Shadow" className="w-[90%]" />
+              <img src={ShadowImage} alt="Shadow" className="w-[90%]" />
             </div>
           </div>
         ))}

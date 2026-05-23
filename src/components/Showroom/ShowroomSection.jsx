@@ -1,38 +1,38 @@
 import React from "react";
 
-import HeadlineArrow from "../../assets/images/headng_line_arw.png";
-import Plus from "../../assets/images/Plus.png";
+import HeadlineArrowIcon from "../../assets/images/headline-arrow.png";
+import PlusIcon from "../../assets/images/plus.png";
 
-import Car1 from "../../assets/images/car_01.png";
-import Car2 from "../../assets/images/car_02.png";
-import Car3 from "../../assets/images/car_03.png";
-import Car4 from "../../assets/images/Car_04.png";
+import Car01Image from "../../assets/images/car-01.png";
+import Car02Image from "../../assets/images/car-02.png";
+import Car03Image from "../../assets/images/car-03.png";
+import Car04Image from "../../assets/images/car-04.png";
 
-import showroomLeftarwPng from "../../assets/images/showroom_arw_left.png";
-import showroomRigtharwPng from "../../assets/images/showroom_arw_right.png";
+import ShowroomLeftArrowIcon from "../../assets/images/showroom-arrow-left.png";
+import ShowroomRightArrowIcon from "../../assets/images/showroom-arrow-right.png";
 
 const showroomItems = [
   {
     id: 1,
-    image: Car1,
+    image: Car01Image,
     carModel: "2014 Q50",
     price: "37,500",
   },
   {
     id: 2,
-    image: Car2,
+    image: Car02Image,
     carModel: "2014 QX70",
     price: "53,350",
   },
   {
     id: 3,
-    image: Car3,
+    image: Car03Image,
     carModel: "2014 QX50",
     price: "37,900",
   },
   {
     id: 4,
-    image: Car4,
+    image: Car04Image,
     carModel: "2014 QX60",
     price: "43,000",
   },
@@ -59,7 +59,7 @@ const ShowroomSection = () => {
           Model Showroom
         </h2>
 
-        <img src={HeadlineArrow} alt="Headline Arrow" className="" />
+        <img src={HeadlineArrowIcon} alt="Headline Arrow" className="" />
       </div>
 
       <div className="relative">
@@ -78,7 +78,7 @@ const ShowroomSection = () => {
           "
         >
           <img
-            src={showroomLeftarwPng}
+            src={ShowroomLeftArrowIcon}
             alt="Previous"
             className="w-3 cursor-pointer"
           />
@@ -174,7 +174,7 @@ const ShowroomSection = () => {
                   justify-center
                 "
               >
-                <img src={Plus} alt="Plus" className="w-6 cursor-pointer" />
+                <img src={PlusIcon} alt="Plus" className="w-6 cursor-pointer" />
               </button>
             </div>
           ))}
@@ -195,7 +195,7 @@ const ShowroomSection = () => {
           "
         >
           <img
-            src={showroomRigtharwPng}
+            src={ShowroomRightArrowIcon}
             alt="Next"
             className="w-3 cursor-pointer"
           />

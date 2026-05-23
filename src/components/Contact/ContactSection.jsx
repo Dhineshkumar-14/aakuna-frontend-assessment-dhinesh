@@ -1,10 +1,10 @@
 import React from "react";
 
-import mapImage from "../../assets/images/map_bg.png";
+import MapBackgroundImage from "../../assets/images/map-bg.webp";
 
-import FB from "../../assets/images/fb.png";
-import TW from "../../assets/images/tw.png";
-import YT from "../../assets/images/yt.png";
+import FacebookIcon from "../../assets/images/fb.png";
+import TwitterIcon from "../../assets/images/tw.png";
+import YoutubeIcon from "../../assets/images/yt.png";
 
 import { Clock3, Phone, MapPin } from "lucide-react";
 
@@ -20,7 +20,7 @@ const ContactSection = () => {
         overflow-hidden
       "
       style={{
-        backgroundImage: `url(${mapImage})`,
+        backgroundImage: `url(${MapBackgroundImage})`,
       }}
     >
       <div className="absolute inset-0 bg-black/75 backdrop-blur-[1px]" />
@@ -52,7 +52,6 @@ const ContactSection = () => {
             <p className="text-sm md:text-base text-gray-200">(905) 752-0881</p>
           </div>
 
-         
           <div className="min-w-[180px] flex-1">
             <h3 className="text-lg md:text-xl font-light mb-2">Email</h3>
 
@@ -66,7 +65,7 @@ const ContactSection = () => {
 
             <div className="flex items-center gap-3">
               <img
-                src={FB}
+                src={FacebookIcon}
                 alt="facebook"
                 className="
                   w-7
@@ -78,7 +77,7 @@ const ContactSection = () => {
               />
 
               <img
-                src={TW}
+                src={TwitterIcon}
                 alt="twitter"
                 className="
                   w-7
@@ -90,7 +89,7 @@ const ContactSection = () => {
               />
 
               <img
-                src={YT}
+                src={YoutubeIcon}
                 alt="youtube"
                 className="
                   w-7
@@ -114,7 +113,6 @@ const ContactSection = () => {
             gap-5
           "
         >
-
           <button
             className="
               w-full
@@ -178,7 +176,6 @@ const ContactSection = () => {
               duration-300
             "
           >
-
             <div
               className="
                 absolute

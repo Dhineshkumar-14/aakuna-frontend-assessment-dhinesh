@@ -1,13 +1,13 @@
 import React from "react";
 
-import HeadlineArrow from "../../assets/images/headng_line_arw.png";
+import HeadlineArrowIcon from "../../assets/images/headline-arrow.png";
 
-import videorightarw from "../../assets/images/video_right_arw.png";
-import videoleftarw from "../../assets/images/video_left_arw.png";
+import VideoRightArrowIcon from "../../assets/images/video-right-arrow.png";
+import VideoLeftArrowIcon from "../../assets/images/video-left-arrow.png";
 
-import eventImage from "../../assets/images/event.png";
+import EventImage from "../../assets/images/event.png";
 
-import readmore from "../../assets/images/read-more.png";
+import ReadMoreIcon from "../../assets/images/read-more.png";
 
 const NewsAndEvents = () => {
   return (
@@ -31,18 +31,18 @@ const NewsAndEvents = () => {
             News And Events
           </h2>
 
-          <img src={HeadlineArrow} alt="Headline Arrow" className="" />
+          <img src={HeadlineArrowIcon} alt="Headline Arrow" className="" />
         </div>
 
         <div className="flex items-center gap-3 pt-1">
           <img
-            src={videoleftarw}
+            src={VideoLeftArrowIcon}
             alt="left arrow"
             className="w-4 cursor-pointer hover:opacity-70 transition-all"
           />
 
           <img
-            src={videorightarw}
+            src={VideoRightArrowIcon}
             alt="right arrow"
             className="w-4 cursor-pointer hover:opacity-70 transition-all"
           />
@@ -64,7 +64,7 @@ const NewsAndEvents = () => {
 
         <div className="overflow-hidden rounded-sm h-[220px] md:h-[260px]">
           <img
-            src={eventImage}
+            src={EventImage}
             alt="event"
             className="
       w-full
@@ -118,7 +118,7 @@ const NewsAndEvents = () => {
           </span>
 
           <img
-            src={readmore}
+            src={ReadMoreIcon}
             alt="read more"
             className="
               w-4

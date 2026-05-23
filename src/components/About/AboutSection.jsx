@@ -1,15 +1,15 @@
 import React from "react";
 
-import HeadlineArrow from "../../assets/images/headng_line_arw.png";
+import HeadlineArrowIcon from "../../assets/images/headline-arrow.png";
 
-import WelcomeBG from "../../assets/images/welocme_bg.png";
-import viloetbg from "../../assets/images/viloet_bg.png";
-import graybg from "../../assets/images/gray_bg.png";
+import WelcomeBackgroundImage from "../../assets/images/welcome-bg.png";
+import VioletBackgroundImage from "../../assets/images/violet-bg.png";
+import GrayBackgroundImage from "../../assets/images/gray-bg.png";
 
-import familyOwnedBG from "../../assets/images/family_owned.png";
-import professional from "../../assets/images/professional.png";
+import FamilyOwnedIcon from "../../assets/images/family-owned.png";
+import ProfessionalIcon from "../../assets/images/professional.png";
 
-import readmore from "../../assets/images/read-more.png";
+import ReadMoreIcon from "../../assets/images/read-more.png";
 
 const aboutCards = [
   {
@@ -17,7 +17,7 @@ const aboutCards = [
     title: "FAMILY OWNED",
     description:
       "In our continual dedication to exceed our customers’ expectations.",
-    icon: familyOwnedBG,
+    icon: FamilyOwnedIcon,
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const aboutCards = [
     title: "FRIENDLY AND PROFESSIONAL",
     description:
       "Our Infiniti service business is one of the largest in Canada.",
-    icon: professional,
+    icon: ProfessionalIcon,
   },
 ];
 
@@ -51,7 +51,7 @@ const AboutSection = () => {
         overflow-hidden
       "
       style={{
-        backgroundImage: `url(${WelcomeBG})`,
+        backgroundImage: `url(${WelcomeBackgroundImage})`,
       }}
     >
       <div className="w-[95%] max-w-[1400px] mx-auto mb-8">
@@ -72,7 +72,7 @@ const AboutSection = () => {
           WELCOME TO MARKHAM INFINITI
         </h2>
 
-        <img src={HeadlineArrow} alt="Headline Arrow" />
+        <img src={HeadlineArrowIcon} alt="Headline Arrow" />
 
         <p
           className="
@@ -159,16 +159,16 @@ const AboutSection = () => {
                 ${card.active ? "text-white" : "text-gray-700 hover:text-white"}
               `}
               style={{
-                backgroundImage: `url(${card.active ? viloetbg : graybg})`,
+                backgroundImage: `url(${card.active ? VioletBackgroundImage : GrayBackgroundImage})`,
               }}
               onMouseEnter={(e) => {
                 if (!card.active) {
-                  e.currentTarget.style.backgroundImage = `url(${viloetbg})`;
+                  e.currentTarget.style.backgroundImage = `url(${VioletBackgroundImage})`;
                 }
               }}
               onMouseLeave={(e) => {
                 if (!card.active) {
-                  e.currentTarget.style.backgroundImage = `url(${graybg})`;
+                  e.currentTarget.style.backgroundImage = `url(${GrayBackgroundImage})`;
                 }
               }}
             >
@@ -190,8 +190,7 @@ const AboutSection = () => {
 
               <h3
                 className="
-                  text-xs
-                  sm:text-sm
+                  text-[10px]
                   md:text-sm
 
                   font-bold
@@ -250,7 +249,7 @@ const AboutSection = () => {
                   Read More
                 </span>
 
-                <img src={readmore} alt="read more" className="w-4" />
+                <img src={ReadMoreIcon} alt="read more" className="w-4" />
               </div>
             </div>
           </div>
