@@ -1,6 +1,6 @@
 # AAKUNA Frontend Assessment – Dhinesh
 
-A responsive frontend application built using React.js, Vite, and Tailwind CSS as part of the AAKUNA Infosystems Front-End Developer assessment.
+A responsive frontend implementation of the Markham Infiniti website built using React.js, Vite, and Tailwind CSS.
 
 ---
 
@@ -9,33 +9,55 @@ A responsive frontend application built using React.js, Vite, and Tailwind CSS a
 - React.js
 - Vite
 - Tailwind CSS
-- JavaScript (ES6+)
-- HTML5
-- CSS3
+- Lucide React Icons
 
 ---
 
-## 📦 Installation & Setup
+## ✨ Features
 
-### 1. Clone the Repository
+- Fully responsive layout
+- Reusable React components
+- Mobile-friendly navigation
+- Optimized image assets
+- Clean and scalable UI implementation
+- Interactive hover effects
+- Embedded promotional video section
+
+---
+
+## 📂 Project Structure
 
 ```bash
-git clone <your-github-repository-url>
+src/
+ ├── assets/
+ ├── components/
+ ├── pages/
+ └── App.jsx
 ```
 
-### 2. Navigate to Project Directory
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Dhineshkumar-14/aakuna-frontend-assessment-dhinesh.git
+```
+
+Navigate to the project folder:
 
 ```bash
 cd aakuna-frontend-assessment-dhinesh
 ```
 
-### 3. Install Dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 4. Run Development Server
+Run the development server:
 
 ```bash
 npm run dev
@@ -43,24 +65,26 @@ npm run dev
 
 ---
 
-## ⚙️ Tailwind CSS Setup
+## 📱 Responsive Design
 
-Tailwind CSS was configured using the official Vite plugin.
+The application is fully responsive across:
 
-### Installation
+- Mobile devices
+- Tablets
+- Laptops
+- Desktop screens
 
-```bash
-npm install tailwindcss @tailwindcss/vite
-```
+---
 
-### vite.config.js
+## 🎨 Asset Optimization
 
-```js
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
+- Optimized image naming conventions
+- Removed unused assets
+- Used lightweight icons with Lucide React
+- Converted large images to WebP format where applicable
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-});
-```
+---
+
+## 👨‍💻 Author
+
+Dhinesh
