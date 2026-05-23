@@ -3,7 +3,7 @@ import React from "react";
 import BgDottedLine from "../../assets/images/bg_dotted_Line.png";
 import CTA01 from "../../assets/images/cta_01.png";
 import CTA02 from "../../assets/images/cta_02.png";
-import CTA03 from "../../assets/images/cta_03.png";
+import CTA03 from "../../assets/images/CTA_03.png";
 import CTA04 from "../../assets/images/cta_04.png";
 
 import CTAArrow from "../../assets/images/cta_arw.png";
