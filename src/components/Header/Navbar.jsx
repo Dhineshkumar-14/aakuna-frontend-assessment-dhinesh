@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Arrow from "../../assets/images/sub_menu_arw.png";
+import ArrowIcon from "../../assets/images/sub-menu-arw.png";
 
 const navLinks = [
   {
@@ -139,7 +139,7 @@ const Navbar = () => {
               </button>
 
               <img
-                src={Arrow}
+                src={ArrowIcon}
                 alt="Arrow Indicator"
                 className={`
                   hidden lg:block
